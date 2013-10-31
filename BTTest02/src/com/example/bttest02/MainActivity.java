@@ -28,7 +28,7 @@ public class MainActivity extends Activity {
 	public void button1Click (View view) {
 		out.append("Pushed Button 1\n");
 		Button but1 = (Button) findViewById(R.id.button1);
-//		but1.setText(R.string.disconnect);
+		but1.setText(R.string.disconnect);
 	}
 	
 	public void button2Click (View view) {

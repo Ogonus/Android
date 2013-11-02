@@ -30,19 +30,28 @@ public class MainActivity extends Activity {
 	}
 
 	public void button1Click (View view) {
-		out.append(msg1.getText());
-		out.append("\n");
+		String message = msg1.getText().toString();
+		if (message.length() > 0) {
+			message = message + "\n";
+			out.append(message);
+		}
 //		Button but1 = (Button) findViewById(R.id.button1);
 //		but1.setText(R.string.disconnect);
 	}
 	
 	public void button2Click (View view) {
-		out.append(msg2.getText());
-		out.append("\n");
+		String message = msg2.getText().toString();
+		if (message.length() > 0) {
+			message = message + "\n";
+			out.append(message);
+		}
 	}
 	
 	public void button3Click (View view) {
-		out.append(msg3.getText());
-		out.append("\n");
+		String message = msg3.getText().toString();
+		if (message.length() > 0) {
+			message = message + "\n";
+			out.append(message);
+		}
 	}
 }

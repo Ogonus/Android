@@ -10,15 +10,17 @@
 
     <EditText
         android:id="@+id/msg1"
-        android:digits="0123456789ABCDEF"
-		android:inputType="textCapCharacters"
-		android:maxLength="16"        
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginTop="14dp"
-        android:ems="10" />
+        android:digits="0123456789ABCDEF"
+        android:ems="10"
+        android:hint="@string/msgFieldText"
+        android:inputType="textCapCharacters|textFilter"
+        android:maxLength="16"
+        android:singleLine="true" />
 
     <Button
         android:id="@+id/button1"
@@ -60,7 +62,8 @@
         android:layout_alignLeft="@+id/msg1"
         android:layout_below="@+id/button1"
         android:layout_marginTop="14dp"
-        android:ems="10" />
+        android:ems="10"
+        android:hint="@string/msgFieldText" />
 
     <EditText
         android:id="@+id/msg3"
@@ -72,7 +75,8 @@
         android:layout_alignLeft="@+id/msg2"
         android:layout_below="@+id/button2"
         android:layout_marginTop="14dp"
-        android:ems="10" />
+        android:ems="10"
+        android:hint="@string/msgFieldText" />
 
     <EditText
         android:id="@+id/out"

@@ -10,5 +10,6 @@
     <string name="disconnect">Disconnect</string>
     <string name="Connect">Connect</string>
     <string name="send">Send</string>
+    <string name="msgFieldText">Enter code here</string>
 
 </resources>

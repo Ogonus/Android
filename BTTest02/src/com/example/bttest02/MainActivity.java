@@ -9,6 +9,7 @@ import android.widget.EditText;
 
 public class MainActivity extends Activity {
 	EditText out;
+	EditText msg1, msg2, msg3;
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +17,9 @@ public class MainActivity extends Activity {
 		setContentView(R.layout.activity_main);
 		out = (EditText) findViewById(R.id.out);
 		out.append("Program started...\nWaiting...\n");
+		msg1 = (EditText) findViewById(R.id.msg1);
+		msg2 = (EditText) findViewById(R.id.msg2);
+		msg3 = (EditText) findViewById(R.id.msg3);
 	}
 
 	@Override
@@ -26,16 +30,19 @@ public class MainActivity extends Activity {
 	}
 
 	public void button1Click (View view) {
-		out.append("Pushed Button 1\n");
-		Button but1 = (Button) findViewById(R.id.button1);
-		but1.setText(R.string.disconnect);
+		out.append(msg1.getText());
+		out.append("\n");
+//		Button but1 = (Button) findViewById(R.id.button1);
+//		but1.setText(R.string.disconnect);
 	}
 	
 	public void button2Click (View view) {
-		out.append("Pushed Button 2\n");
+		out.append(msg2.getText());
+		out.append("\n");
 	}
 	
 	public void button3Click (View view) {
-		out.append("Pushed Button 3\n");
+		out.append(msg3.getText());
+		out.append("\n");
 	}
 }

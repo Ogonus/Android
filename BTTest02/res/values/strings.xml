@@ -9,5 +9,6 @@
     <string name="button3">Button 3</string>
     <string name="disconnect">Disconnect</string>
     <string name="Connect">Connect</string>
+    <string name="send">Send</string>
 
 </resources>
